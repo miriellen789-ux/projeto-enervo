@@ -1,0 +1,202 @@
+
+body {
+    background-color: #0C1525;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    color: #83E6BA;
+    font-size: 50px;
+}
+
+h2 {
+    color: white;
+    font-size: 24px;
+}
+
+p {
+    font-size: 18px;
+}
+
+button {
+    background-color: #83E6BA;
+    color: #0C1525;
+    border: none;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* MENU FIXO NO TOPO */
+
+header {
+    background-color: #101D30;
+    padding: 15px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+nav a {
+    color: #83E6BA;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 15px;
+}
+
+nav a:hover {
+    color: white;
+}
+
+/* HOME */
+
+#inicio {
+    min-height: 500px;
+    padding: 60px 20px;
+}
+
+.conteudo-home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.imagem-home {
+    width: 50%;
+    min-width: 0;
+}
+
+.imagem-home img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.texto-home {
+    width: 50%;
+    min-width: 0;
+    text-align: left;
+}
+
+.texto-home h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.texto-home h2 {
+    font-size: 22px;
+}
+
+.texto-home p {
+    font-size: 18px;
+}
+
+/* SOBRE */
+
+#historia {
+    min-height: 500px;
+    padding: 60px 20px;
+    background-color: #101D30;
+}
+
+/* CONTATO */
+
+#contato {
+    min-height: 250px;
+    padding: 60px 20px;
+}
+
+/* JOGAR */
+
+#jogar {
+    min-height: 500px;
+    padding: 60px 20px;
+}
+
+/* ESPAÇO PARA O MENU NÃO COBRIR OS TÍTULOS */
+
+#inicio, #historia, #contato, #jogar {
+    scroll-margin-top: 70px;
+}
+
+/* AJUSTE PARA TELAS MENORES */
+
+@media (max-width: 700px) {
+    .conteudo-home {
+        flex-direction: column;
+    }
+
+    .imagem-home,
+    .texto-home {
+        width: 100%;
+    }
+
+    .texto-home {
+        text-align: center;
+    }
+
+    .texto-home h1 {
+        font-size: 34px;
+    }
+
+    nav a {
+        margin: 6px;
+        font-size: 14px;
+    }
+}
+
+
+/* HISTÓRIA COM TEXTO E IMAGEM LADO A LADO */
+
+.conteudo-historia {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.texto-historia {
+    width: 50%;
+    min-width: 0;
+    text-align: left;
+}
+
+.imagem-historia {
+    width: 50%;
+    min-width: 0;
+}
+
+.imagem-historia img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+    .conteudo-historia {
+        flex-direction: column;
+    }
+
+    .texto-historia,
+    .imagem-historia {
+        width: 100%;
+    }
+
+    .texto-historia {
+        text-align: center;
+    }
+}
