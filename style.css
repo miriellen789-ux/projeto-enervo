@@ -105,8 +105,12 @@ nav a:hover {
 /* SOBRE */
 
 #historia {
-    min-height: 500px;
+    min-height: 0px;
     padding: 60px 20px;
+    background-color: #101D30;
+}
+#persona {
+    padding: 15px 20px 40px;
     background-color: #101D30;
 }
 
@@ -120,8 +124,8 @@ nav a:hover {
 /* JOGAR */
 
 #jogar {
-    min-height: 500px;
-    padding: 60px 20px;
+    min-height: auto;
+    padding: 60px 20px 10px;
 }
 
 /* ESPAÇO PARA O MENU NÃO COBRIR OS TÍTULOS */
@@ -199,4 +203,25 @@ nav a:hover {
     .texto-historia {
         text-align: center;
     }
+}
+
+/* ÁREA DO JOGO PROJETO ENERVO */
+
+.area-jogo {
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 25px;
+    background-color: #101D30;
+    border: 2px solid #83E6BA;
+    border-radius: 12px;
+}
+
+#tela-jogo {
+    min-height: 350px;
+    background-color: #080F1C;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
