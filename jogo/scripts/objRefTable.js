@@ -5,9 +5,9 @@ self.C3_GetObjectRefTable = function () {
 		C3.Plugins.Text,
 		C3.Plugins.Button,
 		C3.Plugins.Mouse,
+		C3.Plugins.TextBox,
 		C3.Plugins.Mouse.Cnds.OnObjectClicked,
-		C3.Plugins.System.Acts.GoToLayout,
-		C3.Plugins.Button.Cnds.OnClicked
+		C3.Plugins.System.Acts.GoToLayout
 	];
 };
 self.C3_JsPropNameTable = [
@@ -39,7 +39,20 @@ self.C3_JsPropNameTable = [
 	{Texto10: 0},
 	{Sprite9: 0},
 	{Texto11: 0},
-	{Mouse: 0}
+	{Mouse: 0},
+	{Sprite10: 0},
+	{Texto12: 0},
+	{Sprite11: 0},
+	{Texto13: 0},
+	{Sprite12: 0},
+	{Sprite13: 0},
+	{Sprite14: 0},
+	{Texto14: 0},
+	{Sprite15: 0},
+	{EntradaDeTexto: 0},
+	{Sprite16: 0},
+	{Texto15: 0},
+	{Sprite17: 0}
 ];
 
 self.InstanceType = {
@@ -71,5 +84,18 @@ self.InstanceType = {
 	Texto10: class extends self.ITextInstance {},
 	Sprite9: class extends self.ISpriteInstance {},
 	Texto11: class extends self.ITextInstance {},
-	Mouse: class extends self.IInstance {}
+	Mouse: class extends self.IInstance {},
+	Sprite10: class extends self.ISpriteInstance {},
+	Texto12: class extends self.ITextInstance {},
+	Sprite11: class extends self.ISpriteInstance {},
+	Texto13: class extends self.ITextInstance {},
+	Sprite12: class extends self.ISpriteInstance {},
+	Sprite13: class extends self.ISpriteInstance {},
+	Sprite14: class extends self.ISpriteInstance {},
+	Texto14: class extends self.ITextInstance {},
+	Sprite15: class extends self.ISpriteInstance {},
+	EntradaDeTexto: class extends self.ITextInputInstance {},
+	Sprite16: class extends self.ISpriteInstance {},
+	Texto15: class extends self.ITextInstance {},
+	Sprite17: class extends self.ISpriteInstance {}
 }
